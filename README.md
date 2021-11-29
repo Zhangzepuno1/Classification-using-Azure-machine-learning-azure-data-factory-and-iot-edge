@@ -29,6 +29,16 @@ This is what we could use on ADF part to triggr the pipeline running automatical
 https://eastus.api.azureml.ms/pipelines/v1.0/subscriptions/XXXXX/resourceGroups/github/providers/Microsoft.MachineLearningServices/workspaces/github/PipelineRuns/PipelineEndpointSubmit/Id/XXXXX
 
 ## Azure data factory
+Before we trigger the pipline from ADF, first we need to connects the ADF with AML.
+There are two connection methods, Managed Identity and service principal:
+
+A managed identity is a layer on top of a service principal.
+
+The below process is that conncetion with Managed Identity:
+1.Enter IAM of Azure Machine Learning as:
+2.Click Role assignment and hit "Add"
+
+![image](https://user-images.githubusercontent.com/36184365/143804573-a592494b-7916-4f25-881f-a776224657cb.png)
 
 ## Iot edge
 
